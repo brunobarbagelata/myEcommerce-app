@@ -1,6 +1,5 @@
 import React from "react";
 import data from "./data";
-//hello
 
 function App() {
   return (
