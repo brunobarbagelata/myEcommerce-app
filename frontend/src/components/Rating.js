@@ -59,7 +59,9 @@ function Rating(props) {
           }
         ></i>
       </span>
-      <span>{numReviews + " reviews"}</span>
+      <span>
+        {numReviews} {numReviews >= 2 ? "reviews" : "review"}
+      </span>
     </div>
   );
 }
