@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import HomeScreen from "./components/HomeScreen";
 import ProductScreen from "./components/ProductScreen";
 
@@ -8,13 +8,13 @@ function App() {
     <div className="grid-container">
       <header className="row">
         <div>
-          <a href="/" className="brand">
+          <Link to="/" className="brand">
             My E-Commerce
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/cart">Cart</a>
-          <a href="/signin">Sign In</a>
+          <Link to="/cart">Cart</Link>
+          <Link to="/signin">Sign In</Link>
         </div>
       </header>
       <main>
