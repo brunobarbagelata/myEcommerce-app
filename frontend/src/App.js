@@ -1,6 +1,7 @@
 import React from "react";
-import data from "./data";
-import Product from "./components/Product";
+import { Route, Routes } from "react-router-dom";
+import HomeScreen from "./components/HomeScreen";
+import ProductScreen from "./components/ProductScreen";
 
 function App() {
   return (
@@ -17,11 +18,10 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="row center">
-          {data.products.map((product) => (
-            <Product key={product._id} product={product}></Product>
-          ))}
-        </div>
+        <Routes>
+          <Route path="/product/:id" element={<ProductScreen />}></Route>
+          <Route path="/" element={<HomeScreen />}></Route>
+        </Routes>
       </main>
       <footer className="row center">All rights reserved</footer>
     </div>
