@@ -6,4 +6,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > Work in progress
 
-![Work in progress image]("./frontend/public/images/work.png")
+![Work in progress image](https://www.clipartmax.com/png/middle/265-2655834_work-in-progress-icon.png)
