@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../data";
 import Rating from "./Rating";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function ProductScreen() {
   const id = useParams().id;
@@ -12,7 +12,8 @@ function ProductScreen() {
   }
   return (
     <div>
-      <div className="row">
+      <Link to="/">Back to result</Link>
+      <div className="row top">
         <div className="col-2">
           <img className="large" src={product.image} alt={product.name} />
         </div>
