@@ -4,6 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Building
 
-> Work in progress
-
-![Work in progress image](https://www.clipartmax.com/png/middle/265-2655834_work-in-progress-icon.png)
+![Work in progress image](https://cdn11.bigcommerce.com/s-10c6f/images/stencil/1280x1280/products/15607/25366/BAN171-MD__51396.1559929230.jpg?c=2)
