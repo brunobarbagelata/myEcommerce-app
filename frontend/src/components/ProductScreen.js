@@ -1,10 +1,12 @@
 import React from "react";
 import data from "../data";
 import Rating from "./Rating";
+import { useParams } from "react-router-dom";
 
-function ProductScreen(props) {
-  console.log(props);
-  const product = data.products.find((x) => x._id === "1");
+function ProductScreen() {
+  const id = useParams().id;
+  console.log(id);
+  const product = data.products.find((x) => x._id === id);
   if (!product) {
     return <div>Product Not Found</div>;
   }
