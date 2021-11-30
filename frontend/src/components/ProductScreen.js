@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data from "../data";
 import Rating from "./Rating";
 import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 
 function ProductScreen() {
   const id = useParams().id;
   console.log(id);
-  const product = data.products.find((x) => x._id === id);
+
+  let [product, setProduct] = useState({});
+
+  useEffect(async () => {
+    let res = await axios.get(
+      `http://localhost:5000/one-product?productId=${id}`
+    );
+    setProduct(res.data);
+  }, []);
+
   if (!product) {
     return <div>Product Not Found</div>;
   }

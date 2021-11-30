@@ -1,6 +1,5 @@
 {
   "name": "myEcommerce",
-  "type": "module",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
@@ -19,7 +18,9 @@
   },
   "homepage": "https://github.com/brunobarbagelata/myEcommerce-app#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mongoose": "^6.0.14",
     "nodemon": "^2.0.15"
   }
 }

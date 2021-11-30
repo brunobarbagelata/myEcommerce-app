@@ -1,7 +1,6 @@
 const data = {
   products: [
     {
-      _id: "1",
       name: "Shirt + pants",
       category: "shirts",
       image: "/images/p1.jpg",
@@ -13,7 +12,6 @@ const data = {
       description: "High quality product",
     },
     {
-      _id: "2",
       name: "Pants",
       category: "pants",
       image: "/images/p2.jpg",
@@ -25,7 +23,6 @@ const data = {
       description: "Good pants",
     },
     {
-      _id: "3",
       name: "Little hat",
       category: "hats",
       image: "/images/p3.jpg",
@@ -37,7 +34,6 @@ const data = {
       description: "Warm hat",
     },
     {
-      _id: "4",
       name: "Shirt",
       category: "shirts",
       image: "/images/p4.jpg",
@@ -49,7 +45,6 @@ const data = {
       description: "Long sleeve shirt",
     },
     {
-      _id: "5",
       name: "T-Shirt",
       category: "t-shirts",
       image: "/images/p5.jpg",
@@ -61,7 +56,6 @@ const data = {
       description: "Disney yellow shirt",
     },
     {
-      _id: "6",
       name: "Shoes",
       category: "shoes",
       image: "/images/p6.jpg",
