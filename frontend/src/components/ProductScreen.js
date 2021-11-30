@@ -18,7 +18,7 @@ function ProductScreen() {
           <img className="large" src={product.image} alt={product.name} />
         </div>
         <div className="col-1">
-          <ul>
+          <ul className="ulcenter">
             <li>
               <h1>{product.name}</h1>
             </li>
