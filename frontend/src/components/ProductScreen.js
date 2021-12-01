@@ -6,7 +6,6 @@ import axios from "axios";
 
 function ProductScreen() {
   const id = useParams().id;
-  console.log(id);
 
   let [product, setProduct] = useState({});
 
@@ -57,7 +56,7 @@ function ProductScreen() {
                     {product.countInStock > 0 ? (
                       <span className="success">In Stock</span>
                     ) : (
-                      <span className="error">Unavailable</span>
+                      <span className="danger">Unavailable</span>
                     )}
                   </div>
                 </div>
