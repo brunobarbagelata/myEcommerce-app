@@ -18,7 +18,7 @@ function ProductScreen() {
   }, []);
 
   if (!product) {
-    return <div>Product Not Found</div>;
+    return <div>Product Not Found</div>; //if product not found
   }
   return (
     <div>
