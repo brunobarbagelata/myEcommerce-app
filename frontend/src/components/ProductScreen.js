@@ -25,7 +25,7 @@ function ProductScreen() {
       <Link to="/">Back to result</Link>
       <div className="row top">
         <div className="col-2">
-          <img className="mediumm" src={product.image} alt={product.name} />
+          <img className="large" src={product.image} alt={product.name} />
         </div>
         <div className="col-1">
           <ul className="ulcenter">
