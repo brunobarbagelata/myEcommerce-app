@@ -19,6 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/one-product", async (req, res) => {
+  console.log(req.query);
   let oneProduct = await Product.findById(req.query.productId);
   res.json(oneProduct);
 });
