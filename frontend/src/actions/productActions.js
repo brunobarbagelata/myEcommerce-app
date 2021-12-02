@@ -1,4 +1,4 @@
-import { Axios } from "axios";
+import Axios from "axios";
 import {
   PRODUCT_LIST_FAIL,
   PRODUCT_LIST_REQUEST,
@@ -11,6 +11,7 @@ export const listProducts = () => async (dispatch) => {
   });
   try {
     const { data } = await Axios.get("http://localhost:5000/api/products");
+    // console.log(data);
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
